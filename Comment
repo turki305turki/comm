@@ -1,7 +1,7 @@
-
 try:
 	import requests,json,random,os,time
 	r = requests.Session()
+	os.remove("comment.py")
 	username = input("username: ")
 	pasword = input("password: ")
 	url = "https://www.instagram.com/accounts/login/ajax/"
