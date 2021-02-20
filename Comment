@@ -40,7 +40,7 @@ try:
 		rs = r.get(sd)
 		post_id = str(rs.json()["graphql"]["shortcode_media"]["id"])
 		ca = co
-		comment_url = f'https://www.instagram.com/web/comments/{post_id}/add/'
+		comment_url = 'https://www.instagram.com/web/comments/'+post_id+'/add/'
 		csrftoken = login.cookies['csrftoken']
 		print('done login: ' + username)
 		head = {
